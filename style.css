@@ -70,7 +70,10 @@ nav ul li
     color:rgb(173 198 255 / var(--tw-text-opacity, 1));  
 }
 /* Hero section Start */
-
+.hidden
+{
+    display:none;
+}
 .intro-sec
 {
     display: flex;
@@ -119,84 +122,6 @@ nav ul li
 .hidden
 {
     display: none;
-}
-
-/* Mobile Device */
-@media (max-width: 576px)
-{
-   
-    .nav-menu{
-         flex-direction: column;
-        padding: 20px;
-        height: auto;
-        gap: 20px;
-
-      
-    }
-    .nav-menu h2{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .nav-menu ul{
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    
-     .intro-sec{
-        
-        text-align: center;
-        top: 10px;
-        padding: 300px 0px;
-        gap: 30px;
-        display: flex;  
-      
-    }
-    .intro
-    {
-        padding-top: 200px;
-    }
-    
-    .title{
-        font-size: 2.2rem;
-    }
-    .btn{
-        width: 100%;   
-        margin-right: 0px;
-    }
-  
-
-    
-}
-
-/* Medium devices */
-@media (max-width:890px)
-{
-    .nav-menu{
-        display: flex;
-        padding: 25px 40px;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .title{
-        display: flex;
-        flex-direction: column;
-    }
-    .image
-    {
-       display: none;
-    }
-    .btn
-    {
-        margin-top: 10px;
-    }
-    .intro-sec
-    {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 100px 0 0 0; 
-    }
 }
 
 /* Story telling Styles */
@@ -264,9 +189,161 @@ nav ul li
     padding-left: 10px;
 }
 
-/* Mobile device */
+/* Skills Style */
+
+.skills
+{
+  background-color: #131313;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-width: 200px;
+    width: 40%;
+    text-align: center;
+    padding: 100px 0 0px 0 ; 
+
+   
+
+}
+
+.skill-title h1{
+    font-weight: 700;
+    color: white;
+}
+.skill-title p
+{
+    color: #8d9096;
+}
+
+.card-container
+{
+   
+    margin: 80px;
+    gap: 10px;
+    padding: 20px 8%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+
+}
+
+.card
+{
+    height: 150px;
+    max-width: 200px;
+    background-color: #424040;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 30px 10px;
+    border-radius: 10px;
+   
+}
+
+.head-card
+{
+    padding-top: 20px;
+}
+
+.head-card h4
+{
+    padding-top: 10px;
+}
+
+.card .card-icons
+{
+    height: 100px;
+}
+.card img
+{
+    width: 30px;
+}
+
+.stack-list
+{
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    padding: 20px 0;
+   flex-wrap: wrap;
+}
+.stack-list span
+{
+     
+     background-color: #1e1e1f;
+     border-radius: 2px;
+     padding: 8px 10px;
+     font-size: 0.5rem;
+     font-weight: 700;
+}
+.card-container .card ,h4,span
+{
+    color: white;
+}
+
+
+
+
+
+/* Mobile Device */
 @media (max-width: 576px)
 {
+   
+    .nav-menu{
+         flex-direction: column;
+        padding: 20px;
+        height: auto;
+        gap: 20px;
+
+      
+    }
+    .nav-menu h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+     .intro-sec{
+        
+        text-align: center;
+        top: 10px;
+        padding: 300px 0px;
+        gap: 30px;
+        display: flex;  
+      
+    }
+    .intro
+    {
+        padding-top: 200px;
+    }
+    
+    .title{
+        font-size: 2.2rem;
+    }
+    .btn{
+        width: 100%;   
+        margin-right: 0px;
+    }
+    .image
+    {
+       display: none;
+    }
+    
+    /* Story Telling */
     .storytelling
     {
         display: flex;
@@ -277,14 +354,55 @@ nav ul li
            width: 250px;
             height: auto;
     }
+   
+    .card-container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    
 }
 
 /* Medium devices */
-@media (max-width:890px)
+@media screen and (min-width: 576px) and (max-width: 890px)
 {
+    .nav-menu{
+        display: flex;
+        padding: 25px 40px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+    }
+    .image
+    {
+       display: none;
+    }
+    .btn
+    {
+        margin-top: 10px;
+    }
+    .intro-sec
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 100px 0 0 0; 
+    }
+    /* Story Telling */
       .storytelling
     {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    /* Skill Style */
+     .card-container
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 }
