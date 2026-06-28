@@ -1,3 +1,7 @@
+/* body{
+    max-width: 1140px;
+    margin:0 auto;
+} */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
@@ -386,25 +390,6 @@ span {
   
 }
 
-.Growth-container
-{
-    display: flex;
-    flex-direction: column;
-    background-color: #131313;
-    justify-content: center;
-    align-items: center;
-}
-
-.Growth-container h2
-{
-    color:white;
-    font-weight: 700;
-}
-
-.growth-box-container
-{
-    display: flex;
-}
 
 /* Activity Section Style  */
 
@@ -552,57 +537,46 @@ span {
 
 /* Mobile Device */
 @media (max-width: 576px) {
-  /* .nav-menu{
-         flex-direction: column;
-        padding: 20px;
-        height: auto;
-        gap: 20px;
 
-      
-    } */
   .nav-menu h2 {
     font-size: 1.5rem;
     text-align: center;
   }
-  /* .nav-menu ul{
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    } */
+  
 
   .menu-icon {
-    display: flex; /* Show the icon on small screens */
-    z-index: 1001; /* Keeps icon on top of the menu */
+    display: flex; 
+    z-index: 1001; 
   }
 
   .nav-menu ul {
     display: flex;
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: column;  
     gap: 25px;
     align-items: center;
     justify-content: flex-start;
     padding-top: 100px;
 
-    /* Position fixed to fill the entire mobile screen */
+    
     position: fixed;
     top: 0;
     right: 0;
-    width: 60%; /* Menu takes up 60% of screen width */
-    height: 100vh;
+    width: 60%; 
+     height: 100vh;
     background-color: rgb(19, 19, 19);
     border-left: 0.5px solid #c2c6d2;
 
-    /* Off-screen hide effect */
+    
     transform: translateX(100%);
     transition: transform 0.4s ease-in-out;
   }
 
-  /* This class will be added by JavaScript to slide the menu into view */
+  
   .nav-menu ul.active {
     transform: translateX(0);
   }
 
-  /* Optional: Animate hamburger icon lines into an 'X' when active */
+  
   .menu-icon.open .bar:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
@@ -673,22 +647,26 @@ span {
     gap: 20px;
     background-color: #424040;
     padding: 20px;
-   
     box-sizing: border-box;
     place-items: center;
     align-items: center;
+    
   }
 
   .activity-card, .profile-card {
-    padding: 20px;
+    padding: 8px;
     box-sizing: border-box;
+    min-width: 40px;
+  
   }
+
+  
 
   .contribution-graph {
     grid-auto-columns: 16px;
-    gap: 4px;
-    padding: 12px;
-    width: 100%;
+    gap: 2px;
+    padding: 6px;
+    width: 75%;
     box-sizing: border-box;
   }
 
@@ -768,10 +746,14 @@ span {
     box-sizing: border-box;
   }
 
-  .activity-card, .profile-card {
+   .activity-card, .profile-card {
+    padding: 8px;
     box-sizing: border-box;
+    min-width: 100px;
+  
   }
 
+  
 
   
 
