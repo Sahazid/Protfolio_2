@@ -393,14 +393,17 @@ span {
   padding: 40px;
 }
 
-.activity-card, .profile-card {
+.activity-card,
+.profile-card {
   background-color: var(--color-dark-card-bg);
   border: 1px solid var(--color-border-dark);
   border-radius: 16px;
   padding: 32px;
   color: var(--color-text-white);
   box-sizing: border-box;
-  transform: border-color 0.1s ease, box-shadow 0.8s ease;
+  transform:
+    border-color 0.1s ease,
+    box-shadow 0.8s ease;
 }
 
 .card-header {
@@ -433,10 +436,18 @@ span {
   height: 14px;
   width: 24px;
 }
-.level-1 { background-color: var(--color-contrib-lvl1); }
-.level-2 { background-color: var(--color-contrib-lvl2); }
-.level-3 { background-color: var(--color-contrib-lvl3); }
-.level-4 { background-color: var(--color-contrib-lvl4); }
+.level-1 {
+  background-color: var(--color-contrib-lvl1);
+}
+.level-2 {
+  background-color: var(--color-contrib-lvl2);
+}
+.level-3 {
+  background-color: var(--color-contrib-lvl3);
+}
+.level-4 {
+  background-color: var(--color-contrib-lvl4);
+}
 
 .quote {
   font-style: italic;
@@ -533,7 +544,9 @@ span {
   align-items: center;
   margin-top: 2%;
   border-radius: 16px;
-  transform: border-color 0.1s ease, box-shadow 0.8s ease;
+  transform:
+    border-color 0.1s ease,
+    box-shadow 0.8s ease;
 }
 .contact-container-card {
   display: flex;
@@ -755,14 +768,22 @@ span {
   }
 
   /* Story Telling */
+ 
   .storytelling {
     display: flex;
     flex-direction: column-reverse;
   }
+  .storytelling-start
+  {
+    display: flex;
+    width: 80%;
+  }
+  
   .story-img img {
     width: 250px;
     height: auto;
-  }
+    
+  } 
 
   .card-container {
     display: grid;
@@ -795,7 +816,8 @@ span {
     align-items: center;
   }
 
-  .activity-card, .profile-card {
+  .activity-card,
+  .profile-card {
     padding: 8px;
     box-sizing: border-box;
     min-width: 40px;
@@ -868,6 +890,11 @@ span {
     display: flex;
     flex-direction: column-reverse;
   }
+  .storytelling-start
+  {
+    display: flex;
+    width: 80%;
+  }
 
   /* Skill Style */
   .card-container {
@@ -877,7 +904,7 @@ span {
   .card {
     min-width: 200px;
   }
-  
+
   /* Portfolio style  */
   .project-card-container {
     display: grid;
@@ -898,7 +925,8 @@ span {
     box-sizing: border-box;
   }
 
-  .activity-card, .profile-card {
+  .activity-card,
+  .profile-card {
     padding: 8px;
     box-sizing: border-box;
     min-width: 100px;
