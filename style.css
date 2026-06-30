@@ -763,7 +763,7 @@ span {
     font-size: 2.2rem;
   }
   .btn {
-    width: 100%;
+    width: 80%;
     margin-right: 0px;
   }
 
@@ -799,9 +799,14 @@ span {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
     place-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 40px;
-    padding: 40px;
+    padding: 20px;
+    
+  }
+
+  .project-main-card{
+    width: 100%;
   }
 
   /* Activity Style */
