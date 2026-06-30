@@ -1,0 +1,47 @@
+:root {
+  /* Core Brand Colors */
+  --color-dark-bg: #131313;
+  --color-dark-card-bg: #121212;
+  --color-dark-sec-bg: #222121;
+  --color-dark-surface: #171717;
+  --color-card-gray: #424040;
+  --color-border-dark: #1f1f1f;
+  --color-border-light: #c2c6d2;
+  --color-border-grid: #21262d;
+
+  /* Accent & Theme Colors */
+  --color-primary-blue: rgb(173 198 255 / var(--tw-text-opacity, 1));
+  --color-primary-blue-btn: #adc4ff;
+  --color-primary-blue-btn-hover: #99b3ff;
+  --color-secondary-green: rgb(85, 228, 180);
+  --color-teal: #82d3d5;
+  --color-teal-glow: rgba(131, 241, 232, 1);
+  --color-teal-glow-shadow: rgb(147, 161, 160);
+  --color-teal-contact-glow: rgb(46, 174, 166);
+  --color-linkedin: #0077b5;
+  --color-linkedin-hover: #005987;
+  --color-link-blue: #58a6ff;
+  --color-focus-blue: #60a5fa;
+
+  /* Typography Colors */
+  --color-text-white: #ffffff;
+  --color-text-muted: #8d9096;
+  --color-text-gray-dark: #8b949e;
+  --color-text-gray-light: #c9d1d9;
+  --color-text-gray-cool: #a3a3a3;
+  --color-text-label: #6b7280;
+  --color-text-btn-dark: #0d235c;
+
+  /* UI Component Sub-elements */
+  --color-input-bg: #222222;
+  --color-input-border: #2d2d2d;
+  --color-input-placeholder: #4b5563;
+  --color-stack-bg: #1e1e1f;
+  --color-list-bg: rgb(29, 36, 33);
+
+  /* Contribution Levels */
+  --color-contrib-lvl1: #21262d;
+  --color-contrib-lvl2: #3b4252;
+  --color-contrib-lvl3: #4c566a;
+  --color-contrib-lvl4: #1f6feb;
+}
